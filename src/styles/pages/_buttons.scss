@@ -1,0 +1,16 @@
+@import '../fonts';
+
+.cta {
+    @include font-nova;
+    background-color: #c42d1f;
+    color: #ffffff;
+    font-size: 32px;
+    padding: 26px 80px;
+    border-radius: 16px;
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}

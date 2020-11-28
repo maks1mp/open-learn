@@ -1,0 +1,101 @@
+%!Adobe-FontList 1.20
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:NOVASTAMP-Bold
+FamilyName:NOVA STAMP
+StyleName:Bold
+MenuName:NOVA STAMP
+StyleBits:2
+WeightClass:5000
+WidthClass:5
+AngleClass:0
+FullName:NOVASTAMP-Bold
+WritingScript:Roman
+OutlineFileName:/Users/user/Desktop/Clients/Open Learn Kenya/Open Learn Kenya website Folder/Document fonts/NOVA  STAMP PERSONAL USE.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1528104
+FileModTime:492123366
+NameArray:0,Mac,18,NOVA STAMP PERSONAL USE Bold
+NameArray:0,Mac,4,NOVA STAMP Bold
+NameArray:0,Win,1,NOVA STAMP
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:MyanmarSangamMN
+FamilyName:Myanmar Sangam MN
+StyleName:Regular
+MenuName:Myanmar Sangam MN
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Myanmar Sangam MN
+WritingScript:Burmese
+OutlineFileName:/Users/user/Desktop/Clients/Open Learn Kenya/Open Learn Kenya website Folder/Document fonts/Myanmar Sangam MN.ttc
+TTCOffset:32
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:193720
+FileModTime:627806396
+NameArray:0,Mac,18,Myanmar Sangam MN
+NameArray:0,Mac,4,Myanmar Sangam MN
+NameArray:0,Win,1,Myanmar Sangam MN
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:MyanmarSangamMN-Bold
+FamilyName:Myanmar Sangam MN
+StyleName:Bold
+MenuName:Myanmar Sangam MN
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Myanmar Sangam MN Bold
+WritingScript:Burmese
+OutlineFileName:/Users/user/Desktop/Clients/Open Learn Kenya/Open Learn Kenya website Folder/Document fonts/Myanmar Sangam MN.ttc
+TTCOffset:380
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:193720
+FileModTime:627806396
+NameArray:0,Mac,4,Myanmar Sangam MN Bold
+NameArray:0,Win,1,Myanmar Sangam MN
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Interstate-Black
+FamilyName:Interstate Black
+StyleName:Regular
+MenuName:Interstate Black
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Interstate-Black
+WritingScript:Roman
+OutlineFileName:/Users/user/Desktop/Clients/Open Learn Kenya/Open Learn Kenya website Folder/Document fonts/Interstate Black Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:38524
+FileModTime:612365620
+NameArray:0,Mac,4,Interstate-Black
+NameArray:0,Win,1,Interstate Black
+%EndFont
+

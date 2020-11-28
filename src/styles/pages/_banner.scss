@@ -1,0 +1,73 @@
+@import "../fonts";
+
+.banner {
+  &-header {
+    padding: 42px 100px;
+
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+  }
+
+  &-logo {
+    float: left;
+    max-width: 300px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &-menu {
+    float: right;
+
+    &-list {
+
+      a {
+        @include font-myanmar;
+        color: #000000;
+        font-size: 26px;
+        text-decoration: none;
+        padding: 12px 18px 0;
+        text-transform: uppercase;
+        display: inline-block;
+        margin: 0 20px;
+
+        &.active {
+          color: #ffffff;
+          background-color: #c42d1f;
+        }
+      }
+    }
+  }
+
+  &-content {
+    margin: 80px;
+  }
+
+  &-title {
+    @include font-nova;
+    &-header {
+      font-size: 175px;
+      text-transform: uppercase;
+
+      text-align: center;
+
+      &--green {
+        color: #00852f;
+        margin-top: 20px;
+      }
+    }
+
+    p {
+      font-size: 50px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 70px;
+    }
+  }
+}

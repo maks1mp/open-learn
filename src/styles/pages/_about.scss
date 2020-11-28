@@ -1,0 +1,129 @@
+@import "../fonts";
+
+.about-wrapper {
+  position: relative;
+  padding: 30px;
+
+  &::before {
+    z-index: 2;
+    content: "";
+    width: 16px;
+    left: 600px;
+    top: -2px;
+    transform: rotate(-9deg) translateX(-40px);
+    height: calc(100% + 2px);
+    background-color: #00852f;
+    position: absolute;
+  }
+}
+
+.about {
+  position: relative;
+  height: 780px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  background-color: #000000;
+  overflow: hidden;
+
+  > .block {
+    position: absolute;
+    height: inherit;
+  }
+
+  > .block.left {
+    left: 0;
+    width: 600px;
+    transform: skew(9deg);
+  }
+
+  > .block.right {
+    right: 0;
+    width: calc(100% - 530px);
+    transform: skew(9deg);
+
+    .header {
+      font-size: 60px;
+      display: block;
+      border-bottom: 5px solid #ffffff;
+      color: #ffffff;
+      @include font-nova;
+      padding: 40px 30px 15px 0;
+      max-width: 80%;
+    }
+
+    .description {
+      color: #ffffff;
+      font-size: 30px;
+      @include font-myanmar;
+      margin-top: 30px;
+      padding-right: 30px;
+    }
+
+    .offer {
+      color: #ffffff;
+      font-size: 50px;
+      @include font-nova;
+      margin-top: 20px;
+    }
+
+    .list {
+      color: #ffffff;
+      font-size: 30px;
+      @include font-nova;
+      margin-top: 30px;
+
+      span {
+          font-family: sans-serif;
+      }
+    }
+  }
+
+  > .block > .background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    font-family: "object-fit: cover;";
+  }
+
+  > .block.left > .background {
+    transform: skew(-9deg);
+  }
+
+  > .block.right > .background {
+    transform: skew(-9deg);
+  }
+
+  > .block > .link {
+    position: absolute;
+    padding: 15px 50px;
+    font-size: 30px;
+    top: 80%;
+    text-align: center;
+    line-height: 2rem;
+    text-decoration: none;
+    color: #302015;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.9);
+    transform: skew(-9deg) translateY(-50%);
+    color: #ffffff;
+    background-color: #c42d1f;
+    @include font-nova;
+  }
+
+  > .block.left > .link {
+    right: 0;
+  }
+
+  > .block.right > .link {
+    left: 0;
+  }
+}
+
+.shape {
+  float: left;
+  width: 200px;
+  height: 700px;
+  shape-outside: polygon(25% 0%, 28% 15%, 75% 100%, 37% 90%) content-box;
+  shape-image-threshold: 0.4;
+  margin-left: -55px;
+}

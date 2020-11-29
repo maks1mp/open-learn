@@ -75,3 +75,14 @@
   color: #000000;
   font-weight: 600;
 }
+
+@media (max-width: 767px) {
+    .contacts {
+        margin: 15px;
+
+        &-header {
+            font-size: 65px;
+            margin: 50px 0;
+        }
+    }
+}

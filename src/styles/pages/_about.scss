@@ -26,7 +26,7 @@
 
 .about {
   position: relative;
-  min-height: 780px;
+  height: 780px;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
   background-color: #000000;
   overflow: hidden;
@@ -141,20 +141,20 @@
   }
 
   &-small {
-    min-height: 400px;
+    height: 400px;
 
     ul {
       text-transform: uppercase;
     }
 
     .box {
-        padding-left: 40px;
+      padding-left: 40px;
     }
 
     > .block.right {
-        .offer {
-            margin-top: 50px;
-        }
+      .offer {
+        margin-top: 50px;
+      }
     }
   }
 }
@@ -166,4 +166,47 @@
   shape-outside: polygon(0% 10%, 17% 10%, 81% 107%, 57% 104%) content-box;
   shape-image-threshold: 0.4;
   margin-left: -25px;
+}
+
+@media (max-width: 767px) {
+  .about-wrapper {
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .about {
+    height: auto;
+    padding: 20px;
+    .block.right {
+      width: 100%;
+      position: static;
+
+      .header {
+          max-width: 100%;
+      }
+    }
+
+    .block.left {
+      display: none;
+    }
+
+    .block {
+      .background {
+        position: static;
+      }
+    }
+
+    .shape {
+      display: none !important;
+    }
+
+    .book-link {
+      margin: 30px 0 0 !important;
+      text-align: center;
+      padding: 10px 25px !important;
+    }
+  }
 }

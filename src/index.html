@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.min.js"></script>
 </head>
@@ -15,14 +15,18 @@
                 <img src="./images/website_logo.png" alt="logo">
             </a>
             <div class="banner-menu">
-                <div class="banner-menu-list">
+                <div class="banner-menu-list" id="menu">
                     <a href="#home">HOME</a>
                     <a href="#about">ABOUT US</a>
                     <a class="active" href="#course-online">COURSE ONLINE</a>
                     <a href="#registration-form">REGISTRATION FORM</a>
+                    <div class="banner-close" id="close-menu">
+                        <span>x</span>
+                    </div>
+                    <div class="banner-menu-backdrop" id="backdrop"></div>
                 </div>
-                <div class="banner-collapse">
-
+                <div class="banner-collapse" id="open-menu">
+                    <span></span>
                 </div>
             </div>
         </div>

@@ -116,3 +116,35 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+    .course-outline {
+        padding: 10px;
+      
+        &-header {
+            font-size: 80px;
+            margin: 70px auto;
+        }
+
+        &-sections {
+            display: block;
+
+            &-left,
+            &-right {
+                width: 100%;
+            }
+
+            &-left {
+                margin-bottom: 40px;
+            }
+        }
+
+        &-certificate {
+            display: block;
+
+            &-img {
+                float: left;
+            }
+        }
+    }
+}

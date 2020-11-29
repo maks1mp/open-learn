@@ -16,6 +16,12 @@
     background-color: #00852f;
     position: absolute;
   }
+
+  &.about-wrapper-red {
+    &::before {
+      background-color: #c42d1f;
+    }
+  }
 }
 
 .about {
@@ -33,7 +39,6 @@
   > .block.left {
     left: 0;
     width: 600px;
-    transform: skew(9deg);
     height: 100%;
     overflow: hidden;
   }
@@ -42,6 +47,8 @@
     right: 0;
     width: calc(100% - 530px);
     transform: skew(9deg);
+    height: 100%;
+    background-color: #000000;
 
     .header {
       font-size: 60px;
@@ -82,16 +89,20 @@
     }
 
     .book-link {
-      color: #ffffff;
       background-color: #c42d1f;
+      margin-left: -65px;
+      transform: translateX(5px);
+      text-decoration: none;
       padding: 15px 50px;
+    }
+
+    .book-link,
+    .book-text {
+      color: #ffffff;
       font-size: 30px;
       @include font-nova;
       margin-top: 70px;
       display: inline-block;
-      margin-left: -65px;
-      transform: translateX(5px);
-      text-decoration: none;
     }
   }
 
@@ -101,10 +112,6 @@
     width: 100%;
     object-fit: cover;
     font-family: "object-fit: cover;";
-  }
-
-  > .block.left > .background {
-    transform: skew(-9deg);
   }
 
   > .block.right > .background {
@@ -129,6 +136,24 @@
 
   > .block.right > .link {
     left: 0;
+  }
+
+  &-small {
+    min-height: 400px;
+
+    ul {
+      text-transform: uppercase;
+    }
+
+    .box {
+        padding-left: 40px;
+    }
+
+    > .block.right {
+        .offer {
+            margin-top: 50px;
+        }
+    }
   }
 }
 

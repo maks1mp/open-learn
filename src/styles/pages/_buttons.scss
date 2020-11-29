@@ -13,4 +13,9 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+
+    &-green {
+        background-color: #00852f;
+        max-width: 100%;
+    }
 }

@@ -1,64 +1,118 @@
-@import '../fonts';
+@import "../fonts";
 
 .course-outline {
-    padding: 30px;
+  padding: 30px;
+
+  &-header {
+    text-align: center;
+    font-size: 120px;
+    @include font-nova;
+    margin: 90px auto;
+  }
+
+  &-content {
+    font-size: 26px;
+
+    ol {
+      counter-reset: section;
+
+      li::before {
+        display: inline-block;
+        width: 40px;
+        counter-increment: section;
+        content: counters(section, ".") ".";
+      }
+    }
+
+    ol {
+      padding: 10px 0 20px 40px;
+
+      ol {
+        padding: 0;
+        padding-left: 55px;
+      }
+
+      li {
+        line-height: 1.35;
+        span {
+          margin-left: 14px;
+        }
+      }
+    }
+
+    ul {
+      list-style: disc;
+      padding: 40px 0 20px 75px;
+
+      li {
+        line-height: 1.35;
+        span {
+          margin-left: 14px;
+        }
+      }
+    }
+  }
+
+  &-certificate {
+    padding: 30px 20px 20px;
+    display: flex;
+
+    &-img {
+      min-width: 160px;
+      height: 160px;
+      position: relative;
+      overflow: hidden;
+      margin-right: 20px;
+
+      img {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+      }
+    }
+
+    &-text {
+      font-size: 26px;
+      @include font-myanmar;
+      line-height: 1.35;
+    }
+  }
+
+  &-sections {
+    display: flex;
+    justify-content: space-between;
 
     &-header {
-        text-align: center;
-        font-size: 120px;
-        @include font-nova;
-        margin: 90px auto;
+      @include font-nova;
+      background-color: #000000;
+      color: #ffffff;
+      padding: 15px;
+      text-align: center;
+      font-size: 40px;
+      text-transform: uppercase;
     }
 
-    &-certificate {
-        padding: 20px;
-        display: flex;
+    @include font-myanmar;
 
-        &-img {
-            min-width: 160px;
-            height: 160px;
-            position: relative;
-            overflow: hidden;
-            margin-right: 20px;
-
-            img {
-                position: absolute;
-                transform: translate(-50%, -50%);
-                top: 50%;
-                left: 50%;
-            }
-        }
-
-        &-text {
-            font-size: 26px;
-            @include font-myanmar;
-            line-height: 1.35;
-        }
+    &-left {
+      width: calc(50% - 40px);
     }
 
-    &-sections {
-        &-header {
-            @include font-nova;
-            background-color: #000000;
-            color: #ffffff;
-            padding: 15px;
-            text-align: center;
-            font-size: 40px;
-            text-transform: uppercase;
-        }
+    &-right {
+      width: calc(50% - 40px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-        @include font-myanmar;
+    &-border {
+        border: 1px dashed #000000;
 
-        &-left {
-            float: left;
-            width: calc(50% - 40px);
-            border: 1px dashed #000000;
-        }
-
-        &-right {
-            width: calc(50% - 40px);
-            float: right;
-            border: 1px dashed #000000;
+        + .cta {
+            margin-top: 50px;
+            width: 100%;
         }
     }
+  }
 }

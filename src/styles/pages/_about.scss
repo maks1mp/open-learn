@@ -3,6 +3,7 @@
 .about-wrapper {
   position: relative;
   padding: 30px;
+  margin-top: 30px;
 
   &::before {
     z-index: 2;
@@ -19,7 +20,7 @@
 
 .about {
   position: relative;
-  height: 780px;
+  min-height: 780px;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
   background-color: #000000;
   overflow: hidden;
@@ -33,6 +34,8 @@
     left: 0;
     width: 600px;
     transform: skew(9deg);
+    height: 100%;
+    overflow: hidden;
   }
 
   > .block.right {
@@ -52,17 +55,18 @@
 
     .description {
       color: #ffffff;
-      font-size: 30px;
+      font-size: 28px;
       @include font-myanmar;
-      margin-top: 30px;
+      margin-top: 50px;
       padding-right: 30px;
+      line-height: 1.2;
     }
 
     .offer {
       color: #ffffff;
       font-size: 50px;
       @include font-nova;
-      margin-top: 20px;
+      margin-top: 70px;
     }
 
     .list {
@@ -70,10 +74,24 @@
       font-size: 30px;
       @include font-nova;
       margin-top: 30px;
+      line-height: 1.2;
 
       span {
-          font-family: sans-serif;
+        font-family: sans-serif;
       }
+    }
+
+    .book-link {
+      color: #ffffff;
+      background-color: #c42d1f;
+      padding: 15px 50px;
+      font-size: 30px;
+      @include font-nova;
+      margin-top: 70px;
+      display: inline-block;
+      margin-left: -65px;
+      transform: translateX(5px);
+      text-decoration: none;
     }
   }
 
@@ -95,8 +113,6 @@
 
   > .block > .link {
     position: absolute;
-    padding: 15px 50px;
-    font-size: 30px;
     top: 80%;
     text-align: center;
     line-height: 2rem;
@@ -105,9 +121,6 @@
     text-transform: uppercase;
     background: rgba(255, 255, 255, 0.9);
     transform: skew(-9deg) translateY(-50%);
-    color: #ffffff;
-    background-color: #c42d1f;
-    @include font-nova;
   }
 
   > .block.left > .link {
@@ -122,8 +135,8 @@
 .shape {
   float: left;
   width: 200px;
-  height: 700px;
-  shape-outside: polygon(25% 0%, 28% 15%, 75% 100%, 37% 90%) content-box;
+  height: 800px;
+  shape-outside: polygon(0% 10%, 17% 10%, 81% 107%, 57% 104%) content-box;
   shape-image-threshold: 0.4;
-  margin-left: -55px;
+  margin-left: -25px;
 }

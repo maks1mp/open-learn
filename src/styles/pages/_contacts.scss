@@ -3,7 +3,7 @@
 .contacts {
   margin: 30px;
   &-header {
-    margin: 100px 0;
+    margin: 80px 0;
     text-align: center;
     color: #000000;
     border-bottom: 4px solid #000000;
@@ -19,7 +19,7 @@
       border-bottom: 1px solid #000000;
 
       + label {
-          margin-top: 30px;
+          margin-top: 38px;
       }
 
       span {
@@ -58,16 +58,20 @@
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #000000;
+  font-weight: 600;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #000000;
+  font-weight: 600;
 }
 :-ms-input-placeholder {
   /* IE 10+ */
   color: #000000;
+  font-weight: 600;
 }
 :-moz-placeholder {
   /* Firefox 18- */
   color: #000000;
+  font-weight: 600;
 }

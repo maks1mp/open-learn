@@ -84,6 +84,7 @@
       @include font-nova;
       margin-top: 30px;
       line-height: 1.2;
+      padding-right: 15px;
 
       span {
         font-family: sans-serif;
@@ -168,7 +169,45 @@
   margin-left: -25px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 991px) and (max-width: 1300px) {
+  .about-wrapper {
+    padding: 0;
+
+    &::before {
+      left: 355px;
+      top: -30px;
+      transform: rotate(-9deg) translateX(-40px);
+      height: calc(100% + 60px);
+    }
+  }
+
+  .about {
+    .block.right {
+      width: calc(100% - 320px);
+
+      .offer {
+        margin-top: 44px;
+      }
+
+      .description {
+        margin-top: 30px;
+      }
+      .book-link {
+        margin-top: 30px;
+        font-size: 28px;
+      }
+    }
+
+    .block.left {
+      width: 400px;
+    }
+
+    .block {
+    }
+  }
+}
+
+@media (max-width: 990px) {
   .about-wrapper {
     padding: 0;
 
@@ -185,7 +224,7 @@
       position: static;
 
       .header {
-          max-width: 100%;
+        max-width: 100%;
       }
     }
 

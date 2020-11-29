@@ -107,44 +107,56 @@
     }
 
     &-border {
-        border: 1px dashed #000000;
+      border: 1px dashed #000000;
 
-        + .cta {
-            margin-top: 50px;
-            width: 100%;
-        }
+      + .cta {
+        margin-top: 50px;
+        width: 100%;
+      }
     }
   }
 }
 
-@media (max-width: 767px) {
-    .course-outline {
-        padding: 10px;
-      
-        &-header {
-            font-size: 80px;
-            margin: 70px auto;
-        }
+@media (min-width: 991px) and (max-width: 1300px) {
+  .course-outline {
+    &-certificate {
+      display: block;
 
-        &-sections {
-            display: block;
-
-            &-left,
-            &-right {
-                width: 100%;
-            }
-
-            &-left {
-                margin-bottom: 40px;
-            }
-        }
-
-        &-certificate {
-            display: block;
-
-            &-img {
-                float: left;
-            }
-        }
+      &-img {
+        float: left;
+      }
     }
+  }
+}
+
+@media (max-width: 990px) {
+  .course-outline {
+    padding: 10px;
+
+    &-header {
+      font-size: 80px;
+      margin: 70px auto;
+    }
+
+    &-sections {
+      display: block;
+
+      &-left,
+      &-right {
+        width: 100%;
+      }
+
+      &-left {
+        margin-bottom: 40px;
+      }
+    }
+
+    &-certificate {
+      display: block;
+
+      &-img {
+        float: left;
+      }
+    }
+  }
 }

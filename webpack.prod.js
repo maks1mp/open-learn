@@ -38,6 +38,12 @@ module.exports = webpackMerge.merge(commonConfig, {
                     "css-loader",
                     "sass-loader"
                 ]
+            },
+            {
+                test: /\.scss$/,
+                use: {
+                    loader: 'postcss-loader'
+                }
             }
         ]
     },

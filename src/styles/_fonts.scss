@@ -1,29 +1,40 @@
 @font-face {
-    font-family: 'Myanmar_Sangam_MN';
-    src: url('../fonts/Myanmar_Sangam_MN.ttc');
-    font-weight: 400;
+  font-family: "Myanmar_Sangam_MN";
+  src: url("../fonts/Myanmar_Sangam_MN.ttc") format("ttc"),
+    url("../fonts/MyanmarSangamMN.woff") format("woff"),
+    url("../fonts/MyanmarSangamMN.woff2") format("woff2");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'NOVA_STAMP';
-    src: url('../fonts/NOVA_STAMP_PERSONAL_USE.ttf');
-    font-weight: 400;
+  font-family: "Myanmar_Sangam_MN";
+  src: url("../fonts/MyanmarSangamMN-Bold.woff") format("woff"),
+    url("../fonts/MyanmarSangamMN-Bold.woff2") format("woff2");
+  font-weight: 600;
 }
 
 @font-face {
-    font-family: 'Interstate_Black_Regular';
-    src: url('../fonts/Interstate_Black_Regular.otf');
-    font-weight: 400;
+  font-family: "NOVA_STAMP";
+  src: url("../fonts/NOVA_STAMP_PERSONAL_USE.ttf") format("ttf"),
+    url("../fonts/nova_stamp_personal_use-webfont.woff") format("woff"),
+    url("../fonts/MyanmarSangamMN-Bold.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Interstate_Black_Regular";
+  src: url("../fonts/Interstate_Black_Regular.otf");
+  font-weight: 400;
 }
 
 @mixin font-myanmar {
-    font-family: 'Myanmar_Sangam_MN', sans-serif;
+  font-family: "Myanmar_Sangam_MN", sans-serif;
 }
 
 @mixin font-nova {
-    font-family: 'NOVA_STAMP', sans-serif;
+  font-family: "NOVA_STAMP", sans-serif;
 }
 
 @mixin font-interstate {
-    font-family: 'Interstate_Black_Regular', sans-serif;
+  font-family: "Interstate_Black_Regular", sans-serif;
 }
